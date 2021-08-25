@@ -1,0 +1,40 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" [routerLink]="['']">Minha Loja Virtual</a>
+      <form class="d-flex">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Buscar produto..."
+          aria-label="Filtro"
+        />
+        &nbsp;&nbsp;
+        <div class="dropdown">
+          <button
+            class="btn btn-dark dropdown-toggle"
+            type="button"
+            id="dropdownCarrinho"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bi bi-cart"></i>
+            <span class="badge rounded-pill bg-primary">3</span>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+            aria-labelledby="dropdownCarrinho"
+          >
+            <li class="dropdown-item">R$100,00 - Produto 1</li>
+            <li class="dropdown-item">R$200,00 - Produto 3</li>
+            <li class="dropdown-item">R$150,00 - Produto 2</li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+  <nav class="navbar fixed-bottom navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand footer" >Treinamento em Angular</a>
+    </div>
+  </nav>
