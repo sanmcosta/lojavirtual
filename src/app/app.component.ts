@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CarrinhoService } from './servicos/carrinho.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'lojavirtual';
+  
+  constructor (private carrinhoService: CarrinhoService) { }
+
+  get itens() {
+    return this.carrinhoService.itens;
+  }
+
+  get total() {
+    return this.carrinhoService.total;
+  }
+
+  get quantidade() {
+    return this.carrinhoService.quantidade;
+  }
 }
