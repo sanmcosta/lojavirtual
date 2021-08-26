@@ -11,28 +11,28 @@ export class ProdutoService {
       1,
       'Pc Gamer Level One Amd Ryzen 5 3400g / 16gb Ddr4 / Hd 1tb',
       4200.15,
-      ['pc3.jpg'],
+      ['pc3.jpeg'],
       this.getDescricao()
     ),
     new Produto(
       2,
       'Pc Gamer 13 Intel I7 10700 / 16gb Rgb / Ssd 512g / Water Cooler 240 / Rtx 3070',
       19133.27,
-      ['pc2.jpg'],
+      ['pc2.jpeg'],
       this.getDescricao()
     ),
     new Produto(
       3,
       'Pc Gamer Level One Amd Ryzen 5 3400g / 8gb Ddr4 / Hd 1tb',
       3864.99,
-      ['pc3.jpg'],
+      ['pc3.jpeg'],
       this.getDescricao()
     ),
     new Produto(
       4,
       'Pc Gamer Redstone White Intel I3 10100 16gb Rx550 Chp0313',
       4231.17,
-      ['pc4.jpg'],
+      ['pc4.jpeg'],
       this.getDescricao()
     ),
   ];
