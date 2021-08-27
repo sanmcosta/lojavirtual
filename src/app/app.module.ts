@@ -1,3 +1,4 @@
+import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule, LOCALE_ID} from '@angular/core';//usa LOCALE_ID para formatar {{ produto.preco  | currency:'BRL' }}
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -22,7 +23,8 @@ registerLocaleData(ptBr);
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'pt' }],
   bootstrap: [AppComponent]

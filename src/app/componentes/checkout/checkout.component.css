@@ -1,0 +1,29 @@
+.td-img {
+    width: 100px;
+    cursor: pointer;
+  }
+  .td-col {
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .td-preco {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 20px;
+  }
+  
+  .total {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 20px;
+    font-size: 20px;
+  }
+
+  .txt-input {
+    margin-top: 10px;
+  }
+
+  .btn-pagar {
+    margin-top: 10px;
+    width: 100%;
+  }
