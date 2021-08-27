@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Produto } from 'src/app/models/produto.model';
 import { CarrinhoService } from 'src/app/servicos/carrinho.service';
 
 @Component({
@@ -23,5 +24,13 @@ export class CarrinhoComponent implements OnInit {
 
   get total() {
     return this.carrinhoService.total;
+  }
+
+  removerCarrinho(id:number) {
+    this.carrinhoService.remover(id);
+  }
+
+  adicionarCarrinho(produto:Produto) {
+    this.carrinhoService.adicionar(produto);
   }
 }
